@@ -26,17 +26,26 @@ Algunas de las tecnologías y librerías utilizadas:
 - Css
 
 ## Concluciones
-Esta es la primera vez que he trabajado con react native por eso este desafío me ha dejado un gran aprendisaje.
+Esta es la primera vez que he trabajado con react native por eso este desafío me ha dejado un gran aprendizaje.
 
-Al principio del proyecto me encontraba perdido y desorientado pero intenté mantener la calma para poder aprender mas sobre la api de reddit. 
-Investigue un poco en la [documentación](https://www.reddit.com/dev/api/) de reddit y en el [enlace](https://github.com/reddit/reddit/wiki/JSON) que se me proporcionó. 
-Lo primero que descubrí fue  los parametros y querys que necesito para poder realizar la tarea https://api.reddit.com/r/${Subreddit}/${Category}?limit=${Limit}:
+Al principio del proyecto me encontraba perdido y desorientado pero intenté mantener la calma para poder aprender mas sobre la api de Reddit. 
+Investigué un poco en la [documentación](https://www.reddit.com/dev/api/) de Reddit y en el [enlace](https://github.com/reddit/reddit/wiki/JSON) que se me proporcionó. 
+Lo primero que descubrí fue  los parametros y querys que necesito para poder realizar la tarea https://api.reddit.com/r/${Subreddit}/${Category}?limit=${Limit}&after={id del posterior al actual} & before={id del anterior al actual}
 
-- Subreddit es el lugar en donde se indica que subreddit quiero (cars, pics, food, etc).
+- Subreddit indica que subreddit quiero traerme de la api (cars, pics, food, etc).
 - Category es la categoria a la que pertenecen las publicaciones (hot, controversial, top, new).
-- Limit es la cantidad de públicaciones que quiero que me devuelava la api.
-- After se le debe pasar el id de la pagina anterior a la actual (esta query se usa para hacer páginación)
-- Berfore se le debe pasar el id de la página posterior a la actual (esta query se usa para hacer páginación)
+- Limit es la cantidad de publicaciones que quiero que me devuelava la api.
+- After se le debe pasar el id de la pagina posterior a la actual (este query se usa para hacer paginación)
+- Berfore se le debe pasar el id de la página anterior a la actual (este query se usa para hacer paginación)
 
-Luego de que entendí un poco mejor la api pude empezar a realizar los componentes que iba a utilizar la app. Me costo un poco de trabajo aprender a usar los componentes de react native ya que nunca lo había usado. Pero al final pude lograr terminar el proyecto con éxito.
+Luego de que entendí un poco mejor la api pude empezar a realizar los componentes que iba a utilizar la app. Me costo un poco de trabajo aprender a usar los componentes de react native ya que nunca los había usado. Pero al final pude lograr terminar el proyecto con éxito.
+
+
+## Instrucciones para ejecutar el proyecto
+- Clone el repositorio con  #git clone https://github.com/Eduardo871/Reddit-App-Chipre-Challenge.git
+- En la carpeta Reddit-App-Chipre-Challenge ejecute #npm start
+- Se le abrirá una página web en donde le indicará en donde lo quiere correr
+- Para probar la App debe tener un celular que ejecute el códgo o un emulador en su computadora.
+- Para ejecutarlo con el celular debemos tener la App de Expo y apuntar la cámara al código QR que nos proporciona la página web
+- Para ejecutarlo en un emulador debe oprimir en donde dice # Run on Android device/emulator o #Run on iOS simulator.
 
