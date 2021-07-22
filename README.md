@@ -5,7 +5,7 @@
 
 ## Sobre el proyecto
 
-Aplicación desarrollada a lo largo de 3 dias, como prueba de desarrollo de [Chipre](www.chiper.co). 
+Aplicación desarrollada a lo largo de 3 dias, como prueba de desarrollo de [Chiper](www.chiper.co). 
 
 En este desafío, he creado una aplicación básica de Reddit con React Native
 
