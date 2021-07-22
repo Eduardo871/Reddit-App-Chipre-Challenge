@@ -43,8 +43,8 @@ Luego de que entendí un poco mejor la api pude empezar a realizar los component
 
 ## Instrucciones para ejecutar el proyecto
 - Clone el repositorio con  *git clone https://github.com/Eduardo871/Reddit-App-Chipre-Challenge.git*
-- En la carpeta Reddit-App-Chipre-Challenge ejecute #npm start
-- Se le abrirá una página web en donde le indicará en donde lo quiere correr
+- En la carpeta Reddit-App-Chipre-Challenge ejecute *npm start*
+- Se le abrirá una página web en donde le indicará en donde lo puede correr
 - Para probar la App debe tener un celular que ejecute el códgo o un emulador en su computadora.
 - Para ejecutarlo con el celular debemos tener la App de Expo y apuntar la cámara al código QR que nos proporciona la página web
 - Para ejecutarlo en un emulador debe oprimir en donde dice # Run on Android device/emulator o #Run on iOS simulator.
