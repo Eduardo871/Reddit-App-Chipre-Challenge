@@ -1,27 +1,42 @@
 # Reddit-App-Chipre-Challenge
-# Barbers Community 
 <br> </br>
 ![proyect](https://github.com/Eduardo871/Landing-Page-Coca-Cola/blob/main/images/Screenshot%20from%202021-07-01%2011-17-39.png?raw=true)
 
 
 ## Sobre el proyecto
 
-Aplicación desarrollada a lo largo de 4 semanas, como proyecto final del bootcamp de [Soy Henry](https://www.soyhenry.com/). Pueden visualizar el proyecto en [barberscommunity](https://barberscommunity-g8.netlify.app/). 
+Aplicación desarrollada a lo largo de 3 dias, como prueba de desarrollo de [Chipre](www.chiper.co). 
 
-## Barbers Community
+En este desafío, he creado una aplicación básica de Reddit con React Native
 
-La barbería en Latinoamerica, constituye un oficio y una fuente de empleo para muchas comunidades vulnerables de nuestro región. Pero estos muchas veces sufren de inestabilidad y poca previsibilidad, imposibilitando el desarrollo de las economías familiares que dependen de ellos. 
+Reddit es un sitio web de noticias donde los usuarios registrados pueden enviar publicaciones o enlaces a contenido que otros usuarios pueden votar y comentar. Cada una de estas publicaciones se agrupa en categorías conocidas como "subreddits".
 
-Barbers Community, es una plataforma social que busca conectar barberos con potenciales clientes que deseen contratar sus servicios, y así potenciar su alcance y posibilidades de trabajo. A través de la aplicación, los clientes pueden seleccionar y pagar los servicios de su preferencia, así como reservar un día y horario con un determinado barbero.
+La aplicación web debe enumerar las últimas publicaciones del subreddit r/pics.
 
-Además, los barberos pueden visualizar y gestionar los turnos agendados por sus clientes, y recibir pagos en el momento de la reserva. 
+Para obtener la lista de publicaciones de un subreddit, estuve usando la siguiente URL: https://api.reddit.com/r/pics/hot.json
+
+Para obtener más información sobre la estructura JSON, he consultado: https://github.com/reddit/reddit/wiki/JSON 
 
 ## Tecnologías utilizadas
 
 Algunas de las tecnologías y librerías utilizadas:
 
-- React
-- Redux
+- React Native
 - Express
-- Sequelize
-- TailwindCSS
+- Css
+
+## Concluciones
+Esta es la primera vez que he trabajado con react native por eso este desafío me ha dejado un gran aprendisaje.
+
+Al principio del proyecto me encontraba perdido y desorientado pero intenté mantener la calma para poder aprender mas sobre la api de reddit. 
+Investigue un poco en la [documentación](https://www.reddit.com/dev/api/) de reddit y en el [enlace](https://github.com/reddit/reddit/wiki/JSON) que se me proporcionó. 
+Lo primero que descubrí fue  los parametros y querys que necesito para poder realizar la tarea https://api.reddit.com/r/${Subreddit}/${Category}?limit=${Limit}:
+
+- Subreddit es el lugar en donde se indica que subreddit quiero (cars, pics, food, etc).
+- Category es la categoria a la que pertenecen las publicaciones (hot, controversial, top, new).
+- Limit es la cantidad de públicaciones que quiero que me devuelava la api.
+- After se le debe pasar el id de la pagina anterior a la actual (esta query se usa para hacer páginación)
+- Berfore se le debe pasar el id de la página posterior a la actual (esta query se usa para hacer páginación)
+
+Luego de que entendí un poco mejor la api pude empezar a realizar los componentes que iba a utilizar la app. Me costo un poco de trabajo aprender a usar los componentes de react native ya que nunca lo había usado. Pero al final pude lograr terminar el proyecto con éxito.
+
