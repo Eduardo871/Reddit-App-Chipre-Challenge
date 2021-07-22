@@ -42,7 +42,7 @@ Luego de que entendí un poco mejor la api pude empezar a realizar los component
 
 
 ## Instrucciones para ejecutar el proyecto
-- Clone el repositorio con  #git clone https://github.com/Eduardo871/Reddit-App-Chipre-Challenge.git
+- Clone el repositorio con  *git clone https://github.com/Eduardo871/Reddit-App-Chipre-Challenge.git*
 - En la carpeta Reddit-App-Chipre-Challenge ejecute #npm start
 - Se le abrirá una página web en donde le indicará en donde lo quiere correr
 - Para probar la App debe tener un celular que ejecute el códgo o un emulador en su computadora.
