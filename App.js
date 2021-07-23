@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Welcome from './screen/welcome/Welcome';
 import Principal from './screen/principal/Principal';
-import WebView from './screen/webView/WebView';
+import WebViews from './screen/webView/WebViews';
 
 export default function App() {
 
@@ -21,7 +21,7 @@ export default function App() {
           }}
           />
           <Stack.Screen name="Principal" component={Principal} />
-          <Stack.Screen name="WebView" component={WebView} />
+          <Stack.Screen name="WebView" component={WebViews} />
         </Stack.Navigator>
 
       </NavigationContainer>

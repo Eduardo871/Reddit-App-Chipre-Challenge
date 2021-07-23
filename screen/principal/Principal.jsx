@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, TouchableOpacity, View, Text, SafeAreaView, FlatList} from 'react-native';
+import { StyleSheet, View} from 'react-native';
 import List from './list/List';
 import NavBar from './navBar/NavBar';
 import { fetchingSubreddit } from '../../data/fetching';
@@ -16,11 +16,12 @@ const Principal = ({ navigation }) => {
     fetchingSubreddit('pics', 50, 'hot', setData, data)
     
   }, [])
-  
+
     return (
             <View style={styles.container}>
               <List  
               data={data}
+              navigation={navigation}
               />
 
               <NavBar

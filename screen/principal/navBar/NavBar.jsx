@@ -15,25 +15,25 @@ const NavBar = ({data, setData, fetchingSubreddit}) => {
 
   const handleClick = (id)=>{
     if(id === 1){
-      fetchingSubreddit('pics', 20, 'new', setData, data);
+      fetchingSubreddit('pics', 8, 'new', setData, data);
       setActive({
          new:true, top:false, hot:false,controversial:false,
       });
     };
     if(id === 2){
-      fetchingSubreddit('pics', 20, 'top', setData, data);
+      fetchingSubreddit('pics', 8, 'top', setData, data);
       setActive({
          new:false, top:true, hot:false,controversial:false,
       });
     };
     if(id === 3){
-      fetchingSubreddit('pics', 20, 'hot', setData, data);
+      fetchingSubreddit('pics', 8, 'hot', setData, data);
       setActive({
          new:false, top:false, hot:true,controversial:false
       });
     };
     if(id === 4){
-      fetchingSubreddit('pics', 20, 'controversial', setData, data);
+      fetchingSubreddit('pics', 8, 'controversial', setData, data);
       setActive({
          new:false, top:false, hot:false,controversial:true
       });
